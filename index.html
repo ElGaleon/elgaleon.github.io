@@ -3,32 +3,52 @@
     <head>
         <title>Porto</title>
         <link rel="stylesheet" href="style.css">
+        <!--<link rel="stylesheet" href="wave_loading.scss"> -->
+        <link rel="shortcut icon" type = "image/png" href="/images/favicon_argento.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
-        <script src="https://rawgit.com/bradley/Blotter/master/build/materials/liquidDistortMaterial.js"></script>
-        <script src="scripts.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts.js" ype="text/javascript"></script>
     </head>
-<body>
+<body class="main">
 
-    <div id = "main"></div>
+       <!--Heading Logo-->  
+    <a href="#" class="logo-header"><img src="images/pro pic sito flat.png" ></a>
+    <img src="images/porto-logo.png" id="logo"/>
 
-  
-   <!--Heading Title--> 
-    <img src="images/porto.svg" div="logo"/>
+   
 
-    <!--Social Icons-->
-    <div id="social-icons">
-        <a href="https://www.instagram.com/vista.porto/" target="_blank"><img div="instagram" alt="Instagram" src="images/instagram.svg"></a>
-        <a href="https://www.youtube.com/channel/UCU3ujtAOnAsLoTUI5UImQCw" target="_blank"><img src="images/youtube.svg"></a>
-        <a href="mailto:info@il-porto.com" target="_blank"><img src="images/mail.svg"></a>
+    <!--Loading Progress Indicator--> 
+    <div class="container">
+        <div class="progress-bar">
+          <div class="loaded">
+            progetto in corso
+        </div>
+        
+      </div>
+
+      
+
     </div>
 
-    <label>Loading...</label>
-<div id="loader">
-  <div></div>
+    <div class="empty"></div>
+  <!--Social Icons-->
+  <div id="social-icons">
+        <a href="https://www.instagram.com/vista.porto/" target="_blank">
+            <img id ="instagram" alt="Instagram" src="images/instagram.svg">
+        </a>
+        <a href="https://www.youtube.com/channel/UCU3ujtAOnAsLoTUI5UImQCw" target="_blank">
+            <img src="images/youtube.svg">
+        </a>
+        <a href="mailto:info@il-porto.com" target="_blank">
+            <img src="images/mail.svg">
+        </a>
 </div>
+
+
 
 </body>
 </html>
