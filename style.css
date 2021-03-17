@@ -13,6 +13,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: -1;
+    position: relative;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .logo-header img{
@@ -30,6 +39,22 @@ body {
   #logo{
     width: 80%;
     padding: 1em 0 2em 0;  /* top | right | bottom | left */
+  }
+
+  .manifest {
+    display: none;
+    color: var(--main-color);
+    padding: 0;  /* top | right | bottom | left */
+    height: 1vw;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1em; 
+    position: relative;
+    font-weight: 600;
+    white-space: pre-line;
   }
 
 
@@ -57,7 +82,7 @@ body {
     width: 30px;
   }
 
-  .empty{
+  .main > .empty{
     height: 20%;
     width: 100%;
   }
@@ -92,13 +117,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 2px solid var(--main-color);
+  
+    
+    padding: 0 0 5rem 0;/* top | right | bottom | left */
   }
   
   .progress-bar {
     height: 3px;
     width: 200px;
     background: var(--background-progress-bar);
+    border-radius: 25px;
+    border: 1px solid var(--background-progress-bar);
+    
   }
   
   .loaded {
@@ -106,6 +136,8 @@ body {
     height: 100%;
     width: 75%;
     background: var(--main-color);
+    border: 0px solid var(--main-color);
+    border-radius: 100px;
     /* @keyframes duration | timing-function | delay | name */
     animation: 5s linear .2s loading ;
     transform-origin: 0%;
@@ -113,7 +145,8 @@ body {
   
   @keyframes loading {
     0% {
-
+      border: 0px solid var(--main-color);
+    border-radius: 100px;
       transform: scaleX(0);
     }
     100% {

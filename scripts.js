@@ -7,10 +7,13 @@ setTimeout(
     
 $(document).ready(function(){
     $($logoHeader).mouseover(function(){
-      $('body').not('logo-header').css("filter", "blur(10px)");
+      $(document.getElementsByClassName('manifest')).css("display", "block");
+      $(document.getElementsByClassName('main')).css("filter", "blur(50px)").fadeIn();
+      
     });
     $($logoHeader).mouseleave(function(){
-        $('body').css("filter", "blur(0px)");
+        $('.main').css("filter", "blur(0px)"),
+        $('.manifest').css("display", "none");
       });
   });
     //do something special
