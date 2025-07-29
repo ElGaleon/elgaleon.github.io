@@ -258,6 +258,42 @@ export default function About() {
                     <Text id={institution.name} variant="heading-strong-l">
                       {institution.name}
                     </Text>
+                    {institution.score && (
+              <Flex
+                fitWidth
+                border="success-medium"
+                className={styles.blockAlign}
+                style={{
+                  backdropFilter: "blur(var(--static-space-1))",
+                }}
+                background="success-alpha-weak"
+                radius="full"
+                padding="4"
+                gap="8"
+                marginBottom="m"
+                vertical="center"
+              >
+                <Flex paddingX="4">Score: {institution.score}</Flex>
+              </Flex>
+            )}
+                                {institution.gpa && (
+              <Flex
+                fitWidth
+                border="warning-medium"
+                className={styles.blockAlign}
+                style={{
+                  backdropFilter: "blur(var(--static-space-1))",
+                }}
+                background="warning-alpha-weak"
+                radius="full"
+                padding="4"
+                gap="8"
+                marginBottom="m"
+                vertical="center"
+              >
+                <Flex paddingX="4">GPA: {institution.gpa}</Flex>
+              </Flex>
+            )}
                     <Text variant="heading-default-xs" onBackground="neutral-weak">
                       {institution.description}
                     </Text>
