@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  distDir: "build",
   /**
    * Enable static exports.
    *
@@ -9,7 +10,7 @@ const nextConfig: NextConfig = {
   output: "export",
 
   /**
-   * Set base path. This is the slug of your GitHub repository.
+   * Set a base path. This is the slug of your GitHub repository.
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
@@ -29,4 +30,4 @@ const nextConfig: NextConfig = {
 
 module.exports = nextConfig;
 
-export default nextConfig;
+// export default nextConfig;
